@@ -1,0 +1,22 @@
+.ChatListWrapper {
+    width: 30%;
+    background-color: #f7eef7;
+    padding: 20px;
+    border-right: 1px solid #e0d0e0;
+  }
+  
+  .ChatItem {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f7eef7;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .ChatItem.active {
+    background-color: #dcc5e2;
+  }
+  
+  .ChatItem:hover {
+    background-color: #e9d6e9;
+  }

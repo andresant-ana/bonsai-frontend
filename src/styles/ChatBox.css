@@ -1,0 +1,51 @@
+.ChatBoxWrapper {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Message {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 20px;
+  }
+  
+  .Message.isUser {
+    background-color: #9f86c0;
+    color: #fff;
+    align-self: flex-end;
+  }
+  
+  .Message:not(.isUser) {
+    background-color: #f7eef7;
+    color: #000;
+    align-self: flex-start;
+  }
+  
+  .MessageInputWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    padding: 10px;
+    background-color: #f7eef7;
+    border-radius: 20px;
+  }
+  
+  .Input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+  }
+  
+  .SendButton {
+    background-color: #9f86c0;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
