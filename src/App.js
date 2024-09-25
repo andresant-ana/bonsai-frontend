@@ -1,20 +1,19 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useState } from 'react';
+import './App.css';
 import ChatList from './components/ChatList';
 import ChatBox from './components/ChatBox';
 
-const AppWrapper = styled.div`
-  display: flex;
-  height: 100vh;
-`;
+function App() {
+  const [chats, setChats] = useState([]);
 
-const App = () => {
   return (
-    <AppWrapper>
-      <ChatList />
-      <ChatBox />
-    </AppWrapper>
+    <div className="App">
+      <div className="ChatContainer">
+        <ChatList chats={chats} setChats={setChats} />
+        <ChatBox chats={chats} setChats={setChats} />
+      </div>
+    </div>
   );
-};
+}
 
 export default App;
